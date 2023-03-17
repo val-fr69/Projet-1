@@ -2,14 +2,11 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const titleHome = document.querySelector('.home-head');
 const nav = document.querySelector('.nav-bar');
-
-
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     titleHome.classList.toggle('active');
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 160) {
         nav.classList.add('scroll');
@@ -22,6 +19,3 @@ window.addEventListener('scroll', () => {
         titleHome.classList.remove('scroll');
     }
 });
-
-
-
