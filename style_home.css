@@ -7,7 +7,7 @@
 
 :root {
     --first-color: #272727;
-    --second-color: #D4AA7D;
+    --second-color: rgb(146,115,101);
     --third-color: #EFD09E;
     --font-family: 'Roboto', sans-serif;
 
@@ -22,6 +22,7 @@ header {
     background-image: url("images/image-nav.jpg");
     background-size: cover;
     background-position: top;
+    width:auto;
 }
 
 .nav-bar {
@@ -34,15 +35,16 @@ header {
     top: 0;
     width:100vw;
     transition: all 1s ease;
-    height: 10rem;
+    height: 5rem;
+
 }
 .nav-bar.scroll{
     background-color: var(--second-color);
 }
 
 img.logo {
-    height: 9rem;
-    width: 9rem;
+    height: 7rem;
+    width: 7rem;
     justify-self: flex-start;
     margin-left: 2rem;
 }
@@ -102,7 +104,7 @@ ul li a {
     flex-direction: column;
     width: 100vw;
     text-align: center;
-    background-color: rgb(212, 170, 125,0.25);
+    background-color: rgb(146,115,101,0.25);
     transition: 1s;
 }
 
@@ -116,8 +118,7 @@ ul li a {
     font-family: var(--font-family);
     text-align: center;
     color: var(--first-color);
-    background-color: rgb(230, 230, 230, 0.05);
-    width: 100vw;
+    width: 98vw;
     position:absolute;
     margin: 15rem auto 0 auto;
 
@@ -127,7 +128,9 @@ ul li a {
     font-size: 2.5rem;
     padding: 1rem;
     margin: auto;
+    letter-spacing: 0.2rem;
 }
+
 .home-head p {
     font-style: italic;
     font-size: 1rem;
@@ -152,7 +155,7 @@ ul li a {
 }
 
 .container-text{
-    color: var(--third-color);
+    color: var(--second-color);
     font-family: var(--font-family);
     background-color: var(--first-color);
     min-height: 50vh;
@@ -170,9 +173,14 @@ ul li a {
     padding: 1.5rem 0;
 }
 
-.container-description h2,p,button{
+.container-description p{
     padding: 1rem;
 }
+
+.container-description h2{
+    padding: 1rem;
+}
+
 
 .container-description .button{
     align-self: center;
@@ -218,7 +226,7 @@ footer {
 }
 
 .textfooter {
-    padding: 1rem;
+    margin-left: 1rem;
     background-color: var(--second-color);
     color: var(--first-color);
     font-size: large;
@@ -260,7 +268,6 @@ footer {
     align-items: center;
  }
 
-
   /* RESPONSIVE */
 
 
@@ -268,7 +275,7 @@ footer {
 
     .nav-menu {   
     position: fixed;
-    height: 10rem;
+    height: 5rem;
     top: 0;
     left: 0;
     flex-direction: row;    

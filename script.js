@@ -11,7 +11,7 @@ hamburger.addEventListener("click", () => {
 })
 
 window.addEventListener('scroll', () =>  {
-       if(window.scrollY > 30) {
+       if(window.scrollY > 160) {
         nav.classList.add('scroll');
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
