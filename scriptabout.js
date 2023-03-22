@@ -19,3 +19,48 @@ window.addEventListener('scroll', () => {
         titleHome.classList.remove('scroll');
     }
 });
+
+var i = 0 ;
+        function myFunctionCountriesVisited() {
+        if(i < 92) {
+        		i++;
+                document.getElementById('countriesvisited').innerHTML= i;
+
+        }
+    }
+
+    
+     var j = 0 ;
+        function myFunctionyearsphotographie() {
+        if(j < 23) {
+        		j++;
+                document.getElementById('yearsphotographie').innerHTML= j;
+
+        }
+    } 
+
+    var k = 0 ;
+        function myFunctiontourshosted() {
+        if(k < 30) {
+        		k++;
+                document.getElementById('tourshosted').innerHTML= k;
+
+        }
+    }
+
+    var l = 0 ;
+        function myFunctionphotographieawards() {
+        if(l < 100) {
+        		l++;
+                document.getElementById('photographieawards').innerHTML= l;
+
+        }
+    }
+
+    function testFunction(){
+
+myFunctiontourshosted();
+myFunctionCountriesVisited();
+myFunctionphotographieawards();
+myFunctionyearsphotographie();
+    }

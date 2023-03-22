@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
+  
 }
 header {
     height: 100vh;
@@ -120,6 +121,10 @@ ul li a {
 .home-head.active {
     display: none;
 }
+.nav-link:hover{
+    color: whitesmoke;
+
+}
 /*TEST PAGE ABOUT ME*/
 
 footer {
@@ -210,15 +215,18 @@ h2 {
 .numberCountries{
     font-size: 4rem;
     line-height: 62px;
-    color: var(--second-color);
+    color: whitesmoke;
     margin-top: 2rem;
 }
-.statscontainer{
+.statscontainer, .statContainers1{
     display: flex;
     justify-content: space-around;
     text-align: center;
     background-color: var(--first-color);
+    padding: 5rem;
+   
 }
+
 .subject{
     letter-spacing: 0.5px;
     font-weight: 300;
@@ -233,20 +241,28 @@ h2 {
     
 
 }
-.imgbody {
-    height: auto;
-    background-image: url("/images/navAbout1.jpg");
-    background-size: cover;
-    background-position: bottom;
-    max-width: 30%;
-    margin-bottom: 3rem;
-    border-radius: 1rem;
-}
+
 .textHeader{
     text-align: center;
     margin-top: 2rem;
     color: var(--first-color);
 }
+.img1Body{
+    width: 50%;
+    height: aoto;
+   border-radius: 50%;
+}
+.img1About{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--first-color);
+   
+}
+.test{
+    order: +1;
+}
+
 
 /*media queries*/
 
@@ -255,6 +271,9 @@ h2 {
         display: flex;
       justify-content: center;
       flex-direction: column;
+    }
+    .test{
+        order: 0;
     }
   }
   @media only screen and (max-width: 767px) {
@@ -269,6 +288,7 @@ h2 {
         margin-top: 12rem;
     }
   }
+
 
   @media screen and (min-width: 768px) {
     .nav-menu {
